@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Satu Jiwa, Dua Wajah Cinta — Khodijah & Mumtaz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #ffdee9;
+      --bg2: #b5fffc;
+      --card-bg: rgba(255,255,255,0.92);
+      --accent:#8b3a9b;
+      --muted:#6b6b6b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Merriweather', serif;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(255,224,230,0.12), transparent 10%),
+        linear-gradient(135deg, #fce4ec 0%, #fff0f6 25%, #f3e8ff 50%, #e6f7ff 100%),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1650&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      color:#2b2b2b;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.8;
+      padding:40px 20px;
+    }
+
+    .page {
+      max-width:980px;
+      margin:0 auto;
+      background:var(--card-bg);
+      border-radius:18px;
+      box-shadow: 0 10px 40px rgba(18,18,18,0.12);
+      overflow:hidden;
+    }
+
+    header{
+      padding:36px 48px 12px 48px;
+      text-align:center;
+      background: linear-gradient(90deg, rgba(139,58,155,0.06), rgba(160,82,205,0.04));
+      border-bottom:1px solid rgba(0,0,0,0.03);
+    }
+    header h1{
+      margin:0;
+      font-family:'Playfair Display', serif;
+      font-weight:700;
+      color:var(--accent);
+      font-size:34px;
+      letter-spacing:.2px;
+    }
+    header p.lead{
+      margin:12px 0 0 0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .content{
+      display:grid;
+      grid-template-columns:260px 1fr;
+      gap:0;
+    }
+
+    nav.toc{
+      padding:28px;
+      border-right:1px solid rgba(0,0,0,0.03);
+      background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+    }
+    nav.toc h3{
+      margin:0 0 12px 0;
+      color:var(--accent);
+      font-family:'Playfair Display', serif;
+    }
+    nav.toc ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    nav.toc li{
+      margin:10px 0;
+    }
+    nav.toc a{
+      text-decoration:none;
+      color:#333;
+      font-size:15px;
+    }
+    nav.toc a:hover{color:var(--accent)}
+
+    article.book{
+      padding:28px 44px;
+      max-height:calc(100vh - 150px);
+      overflow:auto;
+    }
+
+    article.book h2{
+      font-family:'Playfair Display', serif;
+      color:var(--accent);
+      margin-top:34px;
+      margin-bottom:8px;
+      font-size:22px;
+    }
+    article.book h3{
+      font-family:'Playfair Display', serif;
+      color:#5b2a66;
+      margin-top:28px;
+      font-size:18px;
+    }
+
+    article.book p{
+      margin:12px 0;
+      font-size:16px;
+      color:#2b2b2b;
+      text-align:justify;
+    }
+
+    .quote{
+      margin:18px 0;
+      padding:14px 18px;
+      background:linear-gradient(90deg, rgba(255,240,245,0.6), rgba(245,240,255,0.6));
+      border-left:4px solid rgba(139,58,155,0.3);
+      font-style:italic;
+      color:#7b2a66;
+      border-radius:8px;
+    }
+
+    .chapter-meta{
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:6px;
+    }
+
+    footer{
+      padding:22px 36px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+      border-top:1px solid rgba(0,0,0,0.03);
+    }
+
+    @media(max-width:900px){
+      .content{grid-template-columns:1fr; }
+      nav.toc{order:2;border-top:1px solid rgba(0,0,0,0.03);border-right:none;padding:20px}
+      article.book{padding:24px}
+      header{padding:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page" role="main">
+    <header>
+      <h1>Satu Jiwa, Dua Wajah Cinta</h1>
+      <p class="lead">Soulmate & Twin Flame dalam Satu Orang — Kisah Khodijah & Mumtaz</p>
+    </header>
+
+    <div class="content">
+      <nav class="toc" aria-label="Daftar Isi">
+        <h3>Daftar Isi</h3>
+        <ul>
+          <li><a href="#kata-pengantar">Kata Pengantar</a></li>
+          <li><a href="#bab1">Bab 1 — Soulmate: Rumah Bagi Jiwa</a></li>
+          <li><a href="#bab2">Bab 2 — Twin Flame: Cermin Jiwa yang Membakar</a></li>
+          <li><a href="#bab3">Bab 3 — Bila Soulmate & Twin Flame Menjadi Satu</a></li>
+          <li><a href="#bab4">Bab 4 — Dari Teori ke Kisah</a></li>
+          <li><a href="#bab5">Bab 5 — Pertemuan Jiwa</a></li>
+          <li><a href="#bab6">Bab 6 — Kasih yang Menenangkan</a></li>
+          <li><a href="#bab7">Bab 7 — Api yang Membakar</a></li>
+          <li><a href="#bab8">Bab 8 — Luka & Jarak</a></li>
+          <li><a href="#bab9">Bab 9 — Penyembuhan & Pertemuan Kembali</a></li>
+          <li><a href="#bab10">Bab 10 — Pelajaran Jiwa</a></li>
+          <li><a href="#epilog">Epilog</a></li>
+        </ul>
+      </nav>
+
+      <article class="book">
+        <section id="kata-pengantar">
+          <p class="chapter-meta">Kata Pengantar</p>
+          <h2>Kata Pengantar</h2>
+          <p>
+            Cinta adalah perjalanan jiwa: ia menenangkan namun juga menantang. Buku ini hadir untuk menjelaskan dua wajah cinta yang sering disalahpahami — soulmate dan twin flame — serta menghadirkan sebuah kisah naratif yang menggambarkan ketika kedua wujud itu bersemayam dalam satu jiwa. 
+            Di halaman-halaman ini kamu akan menemukan penjelasan, renungan, dan sebuah cerita yang bertujuan bukan sekadar menghibur, melainkan pula menyentuh dan membuka ruang penyembuhan.
+          </p>
+          <p class="quote">"Cinta bukan sekadar pertemuan dua hati. Ia adalah proses menemukan diri — lewat rumah dan lewat cermin."</p>
+        </section>
+
+        <section id="bab1">
+          <p class="chapter-meta">Bab 1</p>
+          <h2>Soulmate: Rumah Bagi Jiwa</h2>
+          <p>
+            Ada satu kata yang sering kali tidak bisa dijelaskan dengan logika, namun selalu bisa dirasakan oleh hati: <strong>soulmate</strong>. Ia bukan sekadar pasangan, bukan pula hanya teman dekat. Ia adalah seseorang yang membuat dunia terasa ringan: tatap matanya memberi keteduhan, kehadirannya seperti aroma rumah di musim hujan — melekat, menenangkan.
+          </p>
+          <p>
+            Bersama soulmate, tidak perlu banyak kata. Ada keintiman yang lahir dari penerimaan. Soulmate mencerminkan hal-hal sederhana: percakapan tanpa pamrih, kebiasaan kecil yang menjadi ritual, doa yang dipanjatkan bersama—semua itu menjadi pondasi tempat jiwa beristirahat.
+          </p>
+          <p>
+            Namun soulmate bukan jaminan sempurna. Ia boleh saja menjadi teman perjalanan yang memberi ketenangan, tetapi bukan berarti ia tak membawa pelajaran. Justru melalui keterikatan yang aman, jiwa berani membuka diri—dan di sanalah pertumbuhan mulai terjadi.
+          </p>
+        </section>
+
+        <section id="bab2">
+          <p class="chapter-meta">Bab 2</p>
+          <h2>Twin Flame: Cermin Jiwa yang Membakar</h2>
+          <p>
+            Jika soulmate adalah rumah, maka twin flame adalah cermin — dan seringkali cermin itu memantulkan bukan hanya cahaya, tetapi juga bayangan terpanjang dalam diri. Twin flame adalah konsep jiwa yang membuat kita sangat hidup sekaligus sangat sakit, karena ia menyingkap bagian yang tersembunyi: trauma, luka, kekhawatiran yang tak pernah kita akui.
+          </p>
+          <p>
+            Pertemuan twin flame kerap intens, penuh magnetisme, tak jarang disertai pasang surut emosi. Dalam prosesnya, twin flame memaksa kita untuk menghadapi ego, menggugah keberanian, dan memaksa penyembuhan yang selama ini kita tunda. Ia bukan untuk menganiaya; ia untuk menyembuhkan.
+          </p>
+          <div class="quote">"Twin flame bukan datang untuk membuatmu nyaman, tetapi untuk membuatmu sejati."</div>
+        </section>
+
+        <section id="bab3">
+          <p class="chapter-meta">Bab 3</p>
+          <h2>Bila Soulmate & Twin Flame Menjadi Satu</h2>
+          <p>
+            Fenomena ketika soulmate dan twin flame bersatu dalam satu pribadi termasuk langka — dan ketika itu terjadi, cinta menjadi sangat kompleks. Di satu sisi ada rasa pulang: damai, aman, familiar. Di sisi lain ada api yang membakar: panggilan untuk berubah, perlawanan ego, konfrontasi dengan luka lama.
+          </p>
+          <p>
+            Kehadiran kedua fungsi ini dalam satu orang membuat hubungan menjadi ladang transformasi. Kita merasakan ketenangan yang menenangkan sekaligus diguncang sampai inti. Tantangannya besar; hadiahnya juga besar: bukan hanya hubungan bertahan, tetapi jiwa menjadi lebih matang, lebih utuh.
+          </p>
+        </section>
+
+        <section id="bab4">
+          <p class="chapter-meta">Bab 4</p>
+          <h2>Dari Teori ke Kisah: Mengenal Khodijah &amp; Mumtaz</h2>
+          <p>
+            Setelah memahami kerangka teori, mari kita masuk ke kisah Khodijah & Mumtaz — dua jiwa yang dipertemukan, yang merasakan hangatnya soulmate dan getirnya twin flame dalam satu relasi. Kisah ini tidak dibuat sempurna; ia sengaja menggambarkan luka, ketakutan, rindu, dan pada akhirnya penyembuhan.
+          </p>
+          <p>
+            Khodijah adalah perempuan dengan kelembutan yang rapuh. Masa lalu meninggalkan bekas yang membuat hatinya selalu siaga. Mumtaz adalah laki-laki penyabar, namun di dalamnya ada ketakutan akan kehilangan yang tak muda dipahami. Mereka bertemu, saling menyembuhkan sekaligus saling menguji.
+          </p>
+        </section>
+
+        <section id="bab5">
+          <p class="chapter-meta">Bab 5</p>
+          <h2>Pertemuan Jiwa</h2>
+          <p>
+            Pertemuan pertama mereka sederhana — sebuah senyum di sebuah kafe kecil, langkah yang tak sengaja bersilangan, dan percakapan awal yang mengalir seperti sungai. Namun di kedalaman, hati mereka merasakan sesuatu lebih; bukan sekadar rasa suka, tetapi perasaan pulang. 
+          </p>
+          <p>
+            Khodijah, yang kerap merasa kesepian di tengah keramaian, merasakan ketenangan yang belum pernah ia rasakan. Mumtaz, yang selama ini menjaga dirinya dari keterikatan karena takut kehilangan, mendapati bahwa hatinya menghangat tanpa sadar. Dalam kejadian sehari itu, benih sesuatu yang lebih besar ditanam.
+          </p>
+          <p>
+            Meskipun terasa manis, pertemuan ini juga membuka cermin. Keduanya melihat bayangan kesepian dan ketakutan masing-masing di mata satu sama lain — sebuah petunjuk bahwa perjalanan ini akan melibatkan penyembuhan, bukan sekadar romantisme.
+          </p>
+        </section>
+
+        <section id="bab6">
+          <p class="chapter-meta">Bab 6</p>
+          <h2>Kasih yang Menenangkan</h2>
+          <p>
+            Hari-hari awal bersama terasa seperti musim semi yang datang setelah musim dingin panjang. Mereka tertawa bersama, berbagi cerita kecil, dan menikmati kehadiran satu sama lain yang terasa seperti obat bagi kesepian. Saat Mumtaz menatap Khodijah, ada ketenangan seperti rumah—sebuah ruang jiwa yang aman.
+          </p>
+          <p>
+            Mereka tidak perlu kata-kata berlebih. Seringkali cukup duduk berhadap-hadapan, atau hanya berbagi secangkir teh sambil menyusun rencana sederhana. Hal-hal kecil itu menjadi milik yang berharga — bukti bahwa cinta sederhana pun bisa menumbuhkan rasa aman.
+          </p>
+          <p>
+            Bahkan saat mereka tak bersama, saling menunggu menjadi ritual tersendiri: Khodijah menunggu kehadiran Mumtaz dengan hati yang bergetar, dan Mumtaz menunggu balasan pesan dengan harap. Rindu mereka lembut, bukan tajam—di situlah manisnya cinta yang menenangkan.
+          </p>
+        </section>
+
+        <section id="bab7">
+          <p class="chapter-meta">Bab 7</p>
+          <h2>Api yang Membakar</h2>
+          <p>
+            Semakin dalam hubungan, semakin jelas cermin yang terpental. Luka lama Khodijah — rasa takut ditinggalkan — mulai naik ke permukaan. Ia yang dulu merasa aman, kini belajar bahwa cinta juga membawa ketakutan. Kadang kebahagiaan berubah menjadi cemas; percakapan kecil berubah menjadi ujian besar.
+          </p>
+          <p>
+            Untuk Mumtaz, melihat Khodijah menjauh terasa menyakitkan. Ia tidak mengerti sepenuhnya mengapa orang yang dicintainya memilih menjauh, karena pada sebagian besar waktu ia justru ingin semakin dekat. Namun Mumtaz juga sadar bahwa ia bukan lawan Khodijah; ia adalah cermin yang memantulkan luka—dan cermin itu terkadang menyakitkan.
+          </p>
+          <div class="quote">"Cinta yang dalam tidak hanya menghangatkan; ia juga menyingkap apa yang selama ini kita sembunyikan."</div>
+        </section>
+
+        <section id="bab8">
+          <p class="chapter-meta">Bab 8</p>
+          <h2>Luka &amp; Jarak</h2>
+          <p>
+            Ketika ketakutan Khodijah memuncak, ia memilih mundur. Menjauh terasa seperti jalan aman: berpura-pura agar luka tidak semakin lebar. Namun setiap langkah mundur juga membawa rasa kehilangan yang dalam — karena menjauh bukan berarti tidak mencinta.
+          </p>
+          <p>
+            Mumtaz merasakan perubahan itu sebagai kehampaan. Pesan yang dulu selalu sampai, sekarang berjarak. Perjumpaan yang dulu rutin, kini menjadi kenangan pendek. Di malam-malam sepi, Mumtaz menulis doa tanpa suara, berharap bahwa jarak ini bukan akhir, melainkan ruang untuk penyembuhan.
+          </p>
+          <p>
+            Di sisi Khodijah, menjauh bukan berasal dari kebencian; melainkan dari ketakutan akan kehancuran. Ia menangis sendiri, menimbang antara kebutuhan batin dan rasa aman yang cepat pudar bila ia bergantung sepenuhnya.
+          </p>
+        </section>
+
+        <section id="bab9">
+          <p class="chapter-meta">Bab 9</p>
+          <h2>Penyembuhan &amp; Pertemuan Kembali</h2>
+          <p>
+            Jarak memberi mereka hal yang tak disangka: ruang untuk melihat diri. Mumtaz menunggu bukan sekadar menunggu, melainkan berproses—ia berlatih sabar, berdoa, dan percaya. Khodijah juga berproses: perlahan ia membuka luka, mengizinkan doa dan terapi batin untuk masuk.
+          </p>
+          <p>
+            Suatu senja, ketika langit memerah lembut, Khodijah kembali. Langkahnya ragu, matanya basah, namun ada keteguhan baru di hatinya. Ia menemui Mumtaz bukan dengan penuntutan, tetapi dengan pengakuan. "Aku takut," bisiknya. "Tapi aku sadar lari bukan solusi." 
+          </p>
+          <p>
+            Mumtaz menggenggam tangannya, dan kali ini genggaman itu tidak goyah. Mereka berbicara panjang, menumpahkan rasa yang lama disimpan. Pertemuan itu bukan sekadar reuni: itu adalah awal hubungan yang lebih dewasa, di mana cinta dipilih, bukan karena ketergantungan, tetapi karena kesadaran.
+          </p>
+          <div class="quote">"Kesetiaan adalah ketika kau tetap menunggu, meski tidak ada kepastian kapan ia kembali."</div>
+        </section>
+
+        <section id="bab10">
+          <p class="chapter-meta">Bab 10</p>
+          <h2>Pelajaran Jiwa</h2>
+          <p>
+            Dari semua yang dilalui, Khodijah dan Mumtaz belajar beberapa hal penting: soulmate memberi rasa rumah—keamanan, keintiman, doa bersama. Twin flame memberi cermin—tantangan, pembersihan ego, dan pemurnian jiwa. Ketika keduanya hadir sekaligus, cinta menjadi guru yang keras namun lembut.
+          </p>
+          <p>
+            Mereka mengerti bahwa cinta sejati tidak meniadakan luka; ia merangkul luka dan menyembuhkannya lewat ketulusan. Cinta adalah tindakan: mendengarkan ketika kata tak cukup, menunggu ketika ragu datang, dan pulang ketika satu sama lain siap hadir.
+          </p>
+        </section>
+
+        <section id="epilog">
+          <p class="chapter-meta">Epilog</p>
+          <h2>Epilog — Undangan Jiwa</h2>
+          <p>
+            Pilihan akhirnya sederhana namun berat: lari atau menghadapi. Pertemuan dengan twin flame adalah undangan jiwa — undangan untuk berani menghadapi luka terdalam atau memilih melarikan diri. Khodijah dan Mumtaz menjawab undangan itu dengan keberanian.
+          </p>
+          <p class="quote">"Pertemuan dengan twin flame adalah undangan jiwa: berani menghadapi luka terdalam atau lari."</p>
+          <p>
+            Mereka memilih menghadapi. Mereka memilih mencintai, bukan karena tanpa rasa takut, tetapi karena tahu bahwa cinta yang dipilih akan menuntun mereka pulang pada diri sendiri. Dan dalam pilihan itu, mereka menemukan rumah yang sejati: bukan hanya di pelukan satu sama lain, tetapi di ketenangan hati yang mengetahui — bahwa dua jiwa takdir dapat tumbuh, sembuh, dan menua bersama.
+          </p>
+        </section>
+
+      </article>
+    </div>
+
+    <footer>
+      © Kisah & Naskah — untuk penggunaan pribadi. Jika ingin versi cetak atau file EPUB, beri tahu, aku bantu siapkan.
+    </footer>
+  </div>
+</body>
+</html>
